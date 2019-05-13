@@ -41,7 +41,7 @@ public class App extends ListenerAdapter {
 
 	public static void main (String[] args) throws LoginException, IllegalArgumentException, IOException, InterruptedException, RateLimitedException{
 		try {
-			JDA api = new JDABuilder(AccountType.BOT).setToken("NTM5NjM3MzQzMjc1OTc0Njcx.DzFVFQ._qhCddl5eqpc202vwYcEXW1hBdA").setAudioEnabled(true).setAutoReconnect(true).buildBlocking();
+			JDA api = new JDABuilder(AccountType.BOT).setToken("SET_BOT_TOKEN_HERE").setAudioEnabled(true).setAutoReconnect(true).buildBlocking();
 			api.addEventListener(new App());
 			
 		} catch (Exception e) {
